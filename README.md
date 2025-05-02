@@ -7,9 +7,9 @@ This project is a Flask-based API designed to provide information about students
 
 🌐 API Live Links:
 
-http://3.149.7.150:5000/subjects
+http://16.171.47.18:5000/subjects
 
-http://3.149.7.150:5000/students
+http://16.171.47.18:5000/students
 
 Bash Scripts (bash_scripts/ Directory)
 This folder contains Bash scripts to help monitor, back up, and maintain the API server.
