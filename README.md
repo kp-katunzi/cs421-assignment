@@ -52,7 +52,7 @@ chmod +x bash_scripts/*.sh
 ./bash_scripts/health_check.sh
 Docker Deployment
 Building Docker Images
-Inside your project directory (hamisi-api/):
+Inside your project directory (katunzi-api/):
 
 bash
 Copy
@@ -61,7 +61,7 @@ Edit
 sudo docker-compose build
 This will create:
 
-hamisi-api_api:latest — Your Flask API container.
+cs421-assignment-api:latest — Your Flask API container.
 
 mysql:8.0 — The MySQL database container.
 
@@ -87,7 +87,7 @@ Example:
 bash
 Copy
 Edit
-docker logs hamisi-api_api_1
+docker logs cs421-assignment-api
 Docker Registry Upload
 1. Tag Your Image (if needed)
 If you have not already tagged:
@@ -95,7 +95,7 @@ If you have not already tagged:
 bash
 Copy
 Edit
-docker tag hamisi-api_api hamisishehe05/hamisi-api:latest
+docker tag cs421-assignment-api thedeveloperdesk/cs421-assignment3:v1
 2. Login to Docker Hub
 bash
 Copy
@@ -116,9 +116,9 @@ You can pull the image using:
 bash
 Copy
 Edit
-docker pull hamisishehe05/hamisi-api:latest
+docker pull thedeveloperdesk/cs421-assignment3:v1
 Or view it on Docker Hub:
-👉 https://hub.docker.com/r/hamisishehe05/hamisi-api
+👉 https://hub.docker.com/repository/docker/thedeveloperdesk/cs421-assignment3
 
 
 
