@@ -1,0 +1,72 @@
+/* Main container */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Header styling */
+.header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  color: #0077cc;
+}
+
+/* Buttons container */
+.buttons-container {
+  margin-bottom: 2rem;
+}
+
+.view-button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #005fa3;
+  transform: translateY(-3px);
+}
+
+.view-button:active {
+  transform: translateY(1px);
+}
+
+/* Node indicator styling */
+.node-indicator {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .view-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

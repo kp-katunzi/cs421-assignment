@@ -2,9 +2,9 @@ from app import db, app
 from models import Students, Subjects
 import random
 
-first_names = ['hamisi', 'shehe', 'shafii', 'mudi', 'hasan', 'juma', 'elia', 'seleman']
-last_names = ['ali', 'mohamed', 'omar', 'juma', 'abubakar', 'rashid', 'abdalla', 'bakar']
-programs = ['SE1', 'CS1', 'CE1', 'SNICE']
+first_names = ['paul', 'Aaron' ,'hamisi', 'shehe', 'shafii', 'mudi', 'hasan', 'juma', 'elia', 'seleman']
+last_names = [ 'katunzi','kaihula' ,'ali', 'mohamed', 'omar', 'juma', 'abubakar', 'rashid', 'abdalla', 'bakar']
+programs = ['SE1', 'CS1', 'CE1', 'SNICE', 'TE1', 'ICT1', 'SE2', 'CS2', 'CE2', 'SNICE2']
 
 subject_data = [
     ('LG 102', 'Communication Skills', 'year 1'),

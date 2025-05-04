@@ -1,0 +1,35 @@
+.course-table-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .course-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+  }
+  
+  .course-table th,
+  .course-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .course-table th {
+    background-color: #0077cc;
+    color: white;
+  }
+  
+  .course-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .course-table tr:hover {
+    background-color: #e0f0ff;
+  }
+  
