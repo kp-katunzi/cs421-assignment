@@ -107,7 +107,7 @@ Enter your Docker Hub username and password.
 bash
 Copy
 Edit
-docker push hamisishehe05/hamisi-api:latest
+docker push thedeveloperdesk/cs421-assignment3:v1
 ✅ This uploads your image to Docker Hub.
 
 Docker Hub Link
@@ -192,6 +192,17 @@ The Dockerfile in react_fontend
  frontend2
  frontend3
 
+ Docker Hub
+docker tag cs421-assignment_api thedeveloperdesk/cs421-assignment-frontend:latest
+docker tag cs421-assignment_frontend3 thedeveloperdesk/cs421-assignment-frontend:latest
+docker tag cs421-assignment_frontend2 thedeveloperdesk/cs421-assignment-frontend:latest
+docker tag cs421-assignment_frontend1 thedeveloperdesk/cs421-assignment-frontend:latest
+
+ocker pull thedeveloperdesk/cs421-assignment-frontend:latest
+Or view it on Docker Hub:
+👉 https://hub.docker.com/repository/docker/thedeveloperdesk/cs421-assignment-frontend
+
+
  Load balance which creates in the nginx.conf
  as the following
  events {}
@@ -226,6 +237,8 @@ sudo docker-compose up -d --build
  frontend1: http://16.171.47.18:3000
 frontend2: http://16.171.47.18:3001
 frontend3: http://16.171.47.18:3002
+
+
 
 
 Load Balancer Setup with NGINX (Round-Robin & Health Checks)

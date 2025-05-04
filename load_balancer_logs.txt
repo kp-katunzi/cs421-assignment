@@ -1,0 +1,169 @@
+# NGINX Load Balancer Logs
+
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+3.15.225.82 - - [04/May/2025:13:22:57 +0000] "" 400 0 "-" "-"
+3.15.225.82 - - [04/May/2025:13:24:19 +0000] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xB0\x04}q\xBE\xA3`X\xCDC\xD0\x0B\x1A.Z\xFA\xF2\x1C\x89\xE6\xA1\xD5\x19\xC2\x11\xB7k\x8B\xA7\xB8\xC6\xD8\x00\x00\x1A\xC0/\xC0+\xC0\x11\xC0\x07\xC0\x13\xC0\x09\xC0\x14\xC0" 400 157 "-" "-"
+3.15.225.82 - - [04/May/2025:13:28:27 +0000] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x031\x83\xEF\x8FXs\x02\xDD\xEC\x04\xB3\x1F\x87T\x80\x15G%\xCD5j\x0E\xCC\x13\xD87\xA2\xB20\x1BH\xA8\x00\x00\x1A\xC0/\xC0+\xC0\x11\xC0\x07\xC0\x13\xC0\x09\xC0\x14\xC0" 400 157 "-" "-"
+15.235.44.34 - - [04/May/2025:13:41:03 +0000] "GET /.env HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+15.235.44.34 - - [04/May/2025:13:41:03 +0000] "POST / HTTP/1.1" 405 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+15.235.44.34 - - [04/May/2025:14:08:06 +0000] "GET /.env HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+15.235.44.34 - - [04/May/2025:14:08:07 +0000] "POST / HTTP/1.1" 405 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+159.203.26.240 - - [04/May/2025:14:22:03 +0000] "GET / HTTP/1.1" 200 459 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+159.203.26.240 - - [04/May/2025:14:22:03 +0000] "GET /vite.svg HTTP/1.1" 200 1497 "http://16.171.47.18/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+221.155.1.229 - - [04/May/2025:14:32:14 +0000] "GET / HTTP/1.0" 200 459 "-" "curl/7.88.1"
+167.94.138.188 - - [04/May/2025:14:37:07 +0000] "GET / HTTP/1.1" 200 459 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+167.94.138.188 - - [04/May/2025:14:37:10 +0000] "GET /vite.svg HTTP/1.1" 200 1497 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+167.94.138.188 - - [04/May/2025:14:37:13 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+167.94.138.188 - - [04/May/2025:14:37:16 +0000] "PRI * HTTP/2.0" 400 157 "-" "-"
+167.94.138.188 - - [04/May/2025:14:37:27 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+167.94.138.188 - - [04/May/2025:14:37:30 +0000] "\x16\x03\x01\x00\xF7\x01\x00\x00\xF3\x03\x03\xF2{\xED\xBF\xFF}\x04n_5\x8B\xF5\x99\xA7\x1D\xA6H\xE2\xC4{\x95S4vVZ\x9B\xA5\xFE\x98\xC1w \xFA\xA4\xD16\x9E'\xDDOQ_\x9C \xACNj\x08]G\xB0Xv\xED\x809M" 400 157 "-" "-"
+185.242.226.152 - - [04/May/2025:14:58:43 +0000] "\x16\x03\x01\x00\x8A\x01\x00\x00\x86\x03\x03\x88w\xF5\xCA\x10\x88\x04\x05\x03r\xEB\xB5o\xB7\x93\xA0o\x18\x97\x05\xB7\x91\xD3\xC0\x9C\xEFok\x13\x12sK\x00\x00\x1A\xC0/\xC0+\xC0\x11\xC0\x07\xC0\x13\xC0\x09\xC0\x14\xC0" 400 157 "-" "-"
+
+
+# React Front-End Logs (frontend1 container)
+
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2025/05/04 13:20:37 [notice] 1#1: using the "epoll" event method
+2025/05/04 13:20:37 [notice] 1#1: nginx/1.27.5
+2025/05/04 13:20:37 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/05/04 13:20:37 [notice] 1#1: OS: Linux 6.8.0-1027-aws
+2025/05/04 13:20:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/05/04 13:20:37 [notice] 1#1: start worker processes
+2025/05/04 13:20:37 [notice] 1#1: start worker process 30
+2025/05/04 13:20:37 [notice] 1#1: start worker process 31
+154.74.175.16 - - [04/May/2025:13:39:32 +0000] "GET / HTTP/1.1" 200 459 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:39:32 +0000] "GET /assets/index-C13gwgIm.css HTTP/1.1" 200 2618 "http://16.171.47.18:3000/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:39:33 +0000] "GET /assets/index-BKnGiVmc.js HTTP/1.1" 200 189457 "http://16.171.47.18:3000/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:39:34 +0000] "GET /vite.svg HTTP/1.1" 200 1497 "http://16.171.47.18:3000/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:39:34 +0000] "HEAD / HTTP/1.1" 200 0 "http://16.171.47.18:3000/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+2025/05/04 13:41:03 [error] 30#30: *3 open() "/usr/share/nginx/html/.env" failed (2: No such file or directory), client: 172.22.0.6, server: localhost, request: "GET /.env HTTP/1.0", host: "16.171.47.18"
+172.22.0.6 - - [04/May/2025:13:41:03 +0000] "GET /.env HTTP/1.0" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36" "-"
+172.22.0.6 - - [04/May/2025:14:08:07 +0000] "POST / HTTP/1.0" 405 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36" "-"
+172.22.0.6 - - [04/May/2025:14:32:14 +0000] "GET / HTTP/1.0" 200 459 "-" "curl/7.88.1" "-"
+172.22.0.6 - - [04/May/2025:14:37:13 +0000] "GET /favicon.ico HTTP/1.0" 404 153 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
+2025/05/04 14:37:13 [error] 30#30: *6 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.22.0.6, server: localhost, request: "GET /favicon.ico HTTP/1.0", host: "16.171.47.18"
+
+
+
+# React Front-End Logs (frontend2 container)
+
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2025/05/04 13:20:37 [notice] 1#1: using the "epoll" event method
+2025/05/04 13:20:37 [notice] 1#1: nginx/1.27.5
+2025/05/04 13:20:37 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/05/04 13:20:37 [notice] 1#1: OS: Linux 6.8.0-1027-aws
+2025/05/04 13:20:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/05/04 13:20:37 [notice] 1#1: start worker processes
+2025/05/04 13:20:37 [notice] 1#1: start worker process 30
+2025/05/04 13:20:37 [notice] 1#1: start worker process 31
+154.74.175.16 - - [04/May/2025:13:39:41 +0000] "GET / HTTP/1.1" 200 459 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:39:41 +0000] "GET /assets/index-C13gwgIm.css HTTP/1.1" 200 2618 "http://16.171.47.18:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:39:42 +0000] "GET /assets/index-BKnGiVmc.js HTTP/1.1" 200 189457 "http://16.171.47.18:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:39:42 +0000] "GET /vite.svg HTTP/1.1" 200 1497 "http://16.171.47.18:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:39:42 +0000] "HEAD / HTTP/1.1" 200 0 "http://16.171.47.18:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+172.22.0.6 - - [04/May/2025:13:41:03 +0000] "POST / HTTP/1.0" 405 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36" "-"
+172.22.0.6 - - [04/May/2025:14:22:03 +0000] "GET / HTTP/1.0" 200 459 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" "-"
+172.22.0.6 - - [04/May/2025:14:37:07 +0000] "GET / HTTP/1.0" 200 459 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
+2025/05/04 14:37:27 [error] 30#30: *6 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.22.0.6, server: localhost, request: "GET /favicon.ico HTTP/1.0", host: "16.171.47.18"
+172.22.0.6 - - [04/May/2025:14:37:27 +0000] "GET /favicon.ico HTTP/1.0" 404 153 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
+
+
+# React Front-End Logs (frontend3 container)
+
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2025/05/04 13:20:37 [notice] 1#1: using the "epoll" event method
+2025/05/04 13:20:37 [notice] 1#1: nginx/1.27.5
+2025/05/04 13:20:37 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/05/04 13:20:37 [notice] 1#1: OS: Linux 6.8.0-1027-aws
+2025/05/04 13:20:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/05/04 13:20:37 [notice] 1#1: start worker processes
+2025/05/04 13:20:37 [notice] 1#1: start worker process 30
+2025/05/04 13:20:37 [notice] 1#1: start worker process 31
+154.74.175.16 - - [04/May/2025:13:41:06 +0000] "GET / HTTP/1.1" 200 459 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:41:06 +0000] "GET /assets/index-C13gwgIm.css HTTP/1.1" 200 2618 "http://16.171.47.18:3002/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:41:07 +0000] "GET /assets/index-BKnGiVmc.js HTTP/1.1" 200 189457 "http://16.171.47.18:3002/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:41:08 +0000] "GET /vite.svg HTTP/1.1" 200 1497 "http://16.171.47.18:3002/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+154.74.175.16 - - [04/May/2025:13:41:08 +0000] "HEAD / HTTP/1.1" 200 0 "http://16.171.47.18:3002/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" "-"
+172.22.0.6 - - [04/May/2025:14:08:06 +0000] "GET /.env HTTP/1.0" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36" "-"
+2025/05/04 14:08:06 [error] 30#30: *4 open() "/usr/share/nginx/html/.env" failed (2: No such file or directory), client: 172.22.0.6, server: localhost, request: "GET /.env HTTP/1.0", host: "16.171.47.18"
+172.22.0.6 - - [04/May/2025:14:22:03 +0000] "GET /vite.svg HTTP/1.0" 200 1497 "http://16.171.47.18/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" "-"
+172.22.0.6 - - [04/May/2025:14:37:10 +0000] "GET /vite.svg HTTP/1.0" 200 1497 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" "-"
+
+
+
+
+
+
+
+# Flask API Logs (api container)
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.7:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 846-176-451
+154.74.175.16 - - [04/May/2025 13:26:55] code 400, message Bad request version ('`×ÐßÐpø\x8b4Îm\x02§ºÊÀ\x80\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:26:55] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03\x11\x96\x8e­\x91\x01½\x07\x1ei?+\x07¥ðAwù\x0fñ \x88\x93©\x9a\x9f\x95¥\x13\x10öÀ k\x01\x8f<ÍÎ\x8b\x92°\x19X\x83\x8a/\x1f`×ÐßÐpø\x8b4Îm\x02§ºÊÀ\x80\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:26:55] code 400, message Bad request version ('·àk#\x14h«²Ê\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:26:55] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03Ïw\x18mâ\x8c²\x02ñ\x15\x10êÏÜÒÃQt0*\x84Ù\x822)\x8b¸ñTC\x07\x18 ) ¸%\x07\x93EG8M]G\x16òÄ\x87ØL|¦*\x03\x85·àk#\x14h«²Ê\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:26:56] code 400, message Bad request version ('\x05\x8d\x91\x0532\x88\x95\x8eeJ9\x9c8û¶É\x9a¯\x02\x02\x01yL*\x9f÷~Úy\xad%\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:26:56] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03«\x88\x04t.ÿV\x0dù×åïc\x9cÃ»\x13Ñ\x15S\x00ÿxÓÞuX\x87\\\x9f4x \x05\x8d\x91\x0532\x88\x95\x8eeJ9\x9c8û¶É\x9a¯\x02\x02\x01yL*\x9f÷~Úy­%\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:26:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02~\x01\x00\x02z\x03\x03oô\x9d\x03µÕ)±f¶')
+154.74.175.16 - - [04/May/2025 13:26:56] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03oô\x9d\x03µÕ)±f¶\x0cìGzóA\x8a«l<:" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:28:49] "GET /students HTTP/1.1" 200 -
+154.74.175.16 - - [04/May/2025 13:28:50] code 400, message Bad request version ('ê\x18\x00`3\x9f.B\x1b\x82td\x18\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:28:50] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03\x0d+ç\x08â®Ëc\x81i\x90½\x0fî\x93æ\x00\x9c\x98Ê.è`Ól\x8f\x14Ùgòð´ g\x92y\x81c\x11Ü?À)¹v\x85s\x06ìì\x88 ê\x18\x00`3\x9f.B\x1b\x82td\x18\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:28:50] code 400, message Bad request version ('RE\\\x98é\x18:Y¥\x90\x9d|,7?Î\x95\x1a6\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:28:50] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03\x13`ç\x9a8\x8e\x07£\x08\x07Àn"5ó\x17<Q/"\x1fLë\x0dß°\x0b\x08\x8fÇ\x85\x1c mÍ´N\x86\x14\x1b¾ÆÍ\x8dû\x1dRE\\\x98é\x18:Y¥\x90\x9d|,7?Î\x95\x1a6\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:28:51] code 400, message Bad request version ('7¿ìcéü/\x9aúE×\x97ÎZ\x9d\x8b\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:28:51] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03\x99Æ\x15\x821ØÉ\x015±8¸\x1cQVÉ²\x88-w\x86\x133k`K\x92À7\x8cCî ó¹ÎP\x81Y"#X\x09Aù\x15f¼\x857¿ìcéü/\x9aúE×\x97ÎZ\x9d\x8b\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:28:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02~\x01\x00\x02z\x03\x03[tÌÈø´\x94ôs\x91e\x07@,éæ\x91g¾²-\x8fu\x928þúö±¯ôÕ')
+154.74.175.16 - - [04/May/2025 13:28:51] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03[tÌÈø´\x94ôs\x91e\x07@,éæ\x91g¾²-\x8fu\x928þúö±¯ôÕ µ)õ½µiýñdõZa¡Í¶\x9c-\x94R\x041À5Çÿý÷í\x9eMA\x16\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:30:38] "GET /subjects HTTP/1.1" 200 -
+154.74.175.16 - - [04/May/2025 13:30:39] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07O\x01\x00\x07K\x03\x03\x8cuÊö\x03\x03H\x81')
+154.74.175.16 - - [04/May/2025 13:30:39] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03\x8cuÊö\x03\x03H\x81\x85À®®^ß!Uv'`" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:30:39] code 400, message Bad request version ('©"\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:30:39] "\x16\x03\x01\x07O\x01\x00\x07K\x03\x03Ä àf\x89ù11v>Í?kí`0Úäb\x19q¢î:]¸uêä0\x9dy \x1e>\x1e\x84\x0d\x067hÞ\x1cé(\x93\x80à\x10êÎ0Iº\\J\x84á\x99\x0eøÜ\x0c©"\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:30:40] code 400, message Bad request version ('\x83(õ\x07\x10Ñè\xad;>A\x18&Çù"h.\x12¦ÿ\x16Ê\x96o\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:30:40] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03\x05âÖ\x03Q\x9a\x17g¥Í\x12\x09Á\x17Å\x8e\x03\x03×\x0e¡2)FÆä\x94Y\x17´ÌÙ _A\x17\x1ak\x05\x1c\x83(õ\x07\x10Ñè­;>A\x18&Çù"h.\x12¦ÿ\x16Ê\x96o\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:30:40] code 400, message Bad request version ('\x1a¶ö\x01·QÃ\x11X\x81ÇØóôé2ü\x1bi\x13ÕæóÕ|O·rÉ·ÄÝ\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+154.74.175.16 - - [04/May/2025 13:30:40] "\x16\x03\x01\x02~\x01\x00\x02z\x03\x03À\x9c@\x0b¶\x9arNG)F\x11\x1b\x01õIÊ\x1fNªÂ\x11\x0dâ§Óh»Wî\x0d\x19 \x1a¶ö\x01·QÃ\x11X\x81ÇØóôé2ü\x1bi\x13ÕæóÕ|O·rÉ·ÄÝ\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+154.74.175.16 - - [04/May/2025 13:33:53] "GET /subjects HTTP/1.1" 200 -
+
